@@ -23,24 +23,20 @@ if __name__ == '__main__':
     for i in data:
         score += rounds[i]
 
-    print (score)
+    print(score)
 
- #  for i in data:
-        # if i == "A X":
-        #     score += 3+1
-        # elif i == "A Y":
-        #     score += 6+2
-        # elif i == "A Z":
-        #     score += 0+3
-        # elif i == "B X":
-        #     score += 0+1
-        # elif i == "B Y":
-        #     score += 3+2
-        # elif i == "B Z":
-        #     score += 6+3
-        # elif i == "C X":
-        #     score += 6+1
-        # elif i == "C Y":
-        #     score += 0+2
-        # elif i == "C Z":
-        #     score += 3+3
+# part 2
+
+# x = lose
+# y = draw
+# z = win
+    score2 = 0
+
+    part2_rounds = {
+        "A X":3, "A Y":4, "A Z":8, "B X":1, "B Y":5, "B Z":9, "C X":2, "C Y":6, "C Z":7
+    }
+
+    for i in data:
+        score2 += part2_rounds[i]
+
+    print(score2)
